@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    
+    <style>
+        body{
+
+        }
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 22%;
+            border-radius: 20px ;
+            background-color: rgba(23, 22, 22, 0.91);
+            box-shadow: -15px -15px 10px gray
+        }
+
+        .container input {
+            padding: 10px 43px;
+            margin: 21px 0 12px 0;
+            border: 2px solid black;
+            border-radius: 10px;
+           color: gray;
+            
+        }
+
+        .row1 {
+            margin: 8px 0;
+        }
+
+        .row1 button {
+            margin: 0 4px;
+            color: white;
+            padding: 8px;
+            height: 33px;
+            width: 49px;
+            cursor: pointer;
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: gray;
+            border: 1px solid white;
+           box-shadow: -2px -2px 3px white;
+
+        }
+       
+        #white{
+            background-color: orange;
+            color: black;
+        }
+        #big {
+            margin: 0 4px;
+
+            padding: 8px;
+            height: 33px;
+            width: 49px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>calculator</h1>
+    <div class="container">
+        <input type="text" class="input" val>
+        <div class="row1">
+            <button class="button">C/CE</button>
+            <button class="button">OFF</button>
+            <button class="button">√</button>
+            <button class="button">%</button>
+        </div>
+        <div class="row1">
+            <button class="button">MRC</button>
+            <button class="button">M-</button>
+            <button class="button">M+</button>
+            <button class="button col" id="white">/</button>
+        </div>
+        <div class="row1">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button col" id="white">*</button>
+        </div>
+        <div class="row1">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button" id="white">-</button>
+        </div>
+        <div class="row1">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button col" id="white">+</button>
+        </div>
+        <div class="row1" class="button">
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="button col" id="white">=</button>
+
+        </div>
+    </div>
+    <script src="util.js"></script>
+</body>
+
+</html>
